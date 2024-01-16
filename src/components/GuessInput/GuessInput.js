@@ -11,7 +11,7 @@ function GuessInput({ addGuess }) {
   function handleSubmitGuess(event) {
     event.preventDefault();
     console.log({ guess });
-    addGuess({ guess, id: crypto.randomUUID() });
+    addGuess(guess);
     setGuess('');
   }
 
